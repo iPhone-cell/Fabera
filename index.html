@@ -21,7 +21,7 @@
 <body>
 
 	<header></header>
-	
+	<!--  -->
 	<div class="product">
 		<div class="container">
 			<h1 class="product__title">
@@ -30,21 +30,23 @@
 			<div class="product__main">
 				<div class="product__images">
 					<div class="product__images-div">
-						<a href="#ex1" class="product__image-big" rel="modal:open">
-							<img src="assets/images/wardrobe.jpg" alt="">
-						</a>
+						<div class="flex-wrapper">
+							<button href="#" class="product__image-big" id="btn-open">
+								<img src="assets/images/wardrobe.jpg" alt="">
+							</button>
+						</div>
 					</div>
 					<div class="product__images-div">
-						<a href="#ex1" class="product__image-small" rel="modal:open">
+						<a href="#" class="product__image-small">
 							<img src="assets/images/wardrobe.jpg" alt="">
 						</a>
-						<a href="#ex1" href="#" class="product__image-small" rel="modal:open">
+						<a href="#" href="#" class="product__image-small">
 							<img src="assets/images/wardrobe.jpg" alt="">
 						</a>
-						<a href="#ex1" href="#" class="product__image-small" rel="modal:open">
+						<a href="#" href="#" class="product__image-small">
 							<img src="assets/images/wardrobe.jpg" alt="">
 						</a>
-						<a href="#ex1" href="#" class="product__image-small" rel="modal:open">
+						<a href="#" href="#" class="product__image-small">
 							<img src="assets/images/wardrobe.jpg" alt="">
 						</a>
 					</div>
@@ -103,22 +105,40 @@
 		</div>
 	</div>
 	
-	<!-- Modal HTML embedded directly into document -->
-	<div id="ex1" class="modal">
-		<img src="assets/images/wardrobe.jpg" alt="">
+	<div id="wrapper-modal">
+		<div id="overlay"></div>
+		<div id="modal-window">
+			<div>
+				<button id="btn-close">X</button>
+			</div>
+			<div class="content">
+				<div class="flex-wrapper">
+					<div class="slider-wrapper">
+						<div class="slide active">
+							<img src="assets/images/wardrobe.jpg" alt="">
+						</div>
+						<div class="slide">
+							<img src="assets/images/2.jpg" alt="">
+						</div>
+						<div class="slide">
+							<img src="assets/images/3.jpg" alt="">
+						</div>
+						<div id="btn-prev">
+							<img src="assets/images/prev.png" alt="">
+						</div>
+						<div id="btn-next">
+							<img src="assets/images/next.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="dots-wrapper">
+					<span class="dot active"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</div>
+			</div>
+		</div>
 	</div>
-	
-	<a href="#ex1" rel="modal:open"></a>
-	
-	
-	<script></script>
-	
-	<!-- JQuery -->
-	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-		integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-	
-	<!-- jQuery Modal -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
 	<footer></footer>
 	<script src="assets/js/app.js"></script>
